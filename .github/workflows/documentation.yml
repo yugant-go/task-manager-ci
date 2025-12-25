@@ -26,7 +26,7 @@ jobs:
         python -m pdoc --html --output-dir docs task_manager --force
     
     - name: Upload documentation
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: api-documentation
         path: docs/
